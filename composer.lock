@@ -1,0 +1,141 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "12368187570fe594e9a4b83d1a2fb7c2",
+    "packages": [
+        {
+            "name": "alexisducastel/pve2api",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexisDucastel/pve2api.git",
+                "reference": "1d61b0efadb268611a99fa36cb076429b4995a4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexisDucastel/pve2api/zipball/1d61b0efadb268611a99fa36cb076429b4995a4b",
+                "reference": "1d61b0efadb268611a99fa36cb076429b4995a4b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PVE\\Api": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "This is a simple PHP client for Proxmox API",
+            "time": "2014-05-30 22:21:51"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v0.8.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/5f2eea628eb465d866ad2771927d83769c8f956c",
+                "reference": "5f2eea628eb465d866ad2771927d83769c8f956c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Predis": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete PHP client library for Redis",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2014-01-16 14:10:29"
+        },
+        {
+            "name": "vmwarephp/vmwarephp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vadimcomanescu/vmwarephp.git",
+                "reference": "9fbe2889567f29e093c8e45591488312eaeda281"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vadimcomanescu/vmwarephp/zipball/9fbe2889567f29e093c8e45591488312eaeda281",
+                "reference": "9fbe2889567f29e093c8e45591488312eaeda281",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vadim Comanescu",
+                    "email": "vadim984@gmail.com",
+                    "homepage": "http://vadimcomanescu.wordpress.com"
+                }
+            ],
+            "description": "Vmware vSphere bindings for PHP",
+            "homepage": "https://github.com/vadimcomanescu/vmwarephp",
+            "keywords": [
+                "VMware",
+                "bindings",
+                "php",
+                "vmware php",
+                "vsphere",
+                "vsphere sdk"
+            ],
+            "time": "2013-11-19 11:51:29"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "vmwarephp/vmwarephp": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

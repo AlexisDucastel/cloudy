@@ -1,0 +1,15 @@
+{
+    "require": {
+        "vmwarephp/vmwarephp": "dev-master",
+        "alexisducastel/pve2api": "1.*",
+        "predis/predis": "0.8.*"
+    },
+    "autoload": {
+        "classmap": [
+            "vendor/vmwarephp/vmwarephp/library"
+        ],
+        "psr-0": {
+            "Cloudy\\Core": "lib/"
+        }
+    }
+}
