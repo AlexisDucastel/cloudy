@@ -16,8 +16,12 @@ abstract class Provider{
     */
     static public function factory($type,$args){
         switch($type){
+            case 'ovhDedicatedServers': 
+                return new ProviderOvhDedicatedServers($args['nichandle'],$args['pwd']);
             case 'vsphere': 
                 return new ProviderVSphere($args['host'],$args['port'],$args['user'],$args['pwd']);
+            case 'proxmox': 
+                return new ProviderProxmox($args['host'],$args['port'],$args['user'],$args['realm'],$args['pwd']);
             default:
                 throw new Exception('Unkown provider type');
         }
