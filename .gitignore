@@ -1,3 +1,2 @@
-config/
+config/providers.json
 vendor/
-!config/providers.json.sample

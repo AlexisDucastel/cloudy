@@ -1,0 +1,12 @@
+[
+    {
+        "name":"MyVSphereProvider",
+        "type":"vsphere",
+        "args":{
+            "host":"myhost.tld",
+            "port":"443",
+            "user":"admin",
+            "pwd":"mypassword"
+        }
+    }
+]
