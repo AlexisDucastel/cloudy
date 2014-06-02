@@ -1,6 +1,8 @@
 <?php
 namespace Cloudy\Core;
-
+/**
+* @todo replace SoAPI with https://api.ovh.com
+*/
 class ProviderOvhDedicatedServers extends Provider{
     /**
     * Internal SoAPI connector
@@ -21,6 +23,7 @@ class ProviderOvhDedicatedServers extends Provider{
     
     /**
     * Get server list
+    * @see http://www.ovh.com/soapi/fr/?method=dedicatedReverseList
     * @return array
     */
     public function serverList(){

@@ -8,5 +8,25 @@
             "user":"admin",
             "pwd":"mypassword"
         }
+    },
+    {
+        "name":"MyProxmoxCluster",
+        "type":"proxmox",
+        "args":{
+            "host":"mypxhost.tld",
+            "port":"8006",
+            "user":"user",
+            "realm":"pve",
+            "pwd":"mypass"
+        }
+    },
+    {
+        "name":"MyOvhServers",
+        "type":"ovhDedicatedServers",
+        "args":{
+            "nichandle":"BAR0000-ovh",
+            "pwd":"myovhpass"
+        }
     }
+]
 ]
