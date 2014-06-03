@@ -8,7 +8,6 @@ if($providers===null) die('Cannot decode config');
 
 foreach($providers as $provider){
     $name=$provider['name'];
-    echo "<h3>$name</h3>";
     
     $p=\Cloudy\Core\Provider::factory(
         $provider['type'],
@@ -16,6 +15,8 @@ foreach($providers as $provider){
     );
     
     $srvList=$p->serverList();
+    
+    echo "<h3>$name (".count($srvList).")</h3>";
     foreach($srvList as $id=>$name){
         echo "<div>$id : $name</div>";
     }

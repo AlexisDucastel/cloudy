@@ -2,6 +2,7 @@
     "require": {
         "vmwarephp/vmwarephp": "dev-master",
         "alexisducastel/pve2api": "1.*",
+        "aws/aws-sdk-php": "2.*",
         "predis/predis": "0.8.*"
     },
     "autoload": {

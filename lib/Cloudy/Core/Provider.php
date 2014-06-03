@@ -16,6 +16,8 @@ abstract class Provider{
     */
     static public function factory($type,$args){
         switch($type){
+            case 'awsEc2': 
+                return new ProviderAmazonEC2($args['key'],$args['secret'],$args['region']);
             case 'ovhDedicatedServers': 
                 return new ProviderOvhDedicatedServers($args['nichandle'],$args['pwd']);
             case 'vsphere': 
