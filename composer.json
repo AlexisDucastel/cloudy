@@ -1,4 +1,8 @@
 {
+    "name": "alexisducastel/cloudy",
+    "type": "library",
+    "description": "Cloud providers api abstraction",
+    "homepage": "https://github.com/AlexisDucastel/cloudy",
     "require": {
         "vmwarephp/vmwarephp": "dev-master",
         "alexisducastel/pve2api": "1.*",
