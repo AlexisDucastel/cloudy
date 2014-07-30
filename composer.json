@@ -4,7 +4,7 @@
     "description": "Cloud providers api abstraction",
     "homepage": "https://github.com/AlexisDucastel/cloudy",
     "require": {
-        "vmwarephp/vmwarephp": "dev-master",
+        "alexisducastel/vmwarephp": "1.*",
         "alexisducastel/pve2api": "1.*",
         "aws/aws-sdk-php": "2.*",
         "predis/predis": "0.8.*"
