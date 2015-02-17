@@ -1,3 +1,23 @@
 <?php
-mysql_connect('host','user','password');
-mysql_select_db('db');
+<?php
+define('MY_HST','host');
+define('MY_USR','user');
+define('MY_PWD','password');
+define('MY_DB','db');
+
+class Db{
+    protected $mysql;
+    public function __construct(){
+        $this->mysql=mysqli_connect(MY_HST,MY_USR,MY_PWD,MY_DB) or die('Cannot connect Db');
+    }
+    public function query($sql){
+        return mysqli_fetch_all(mysqli_query($this->mysql,$sql),MYSQLI_ASSOC);
+    }
+    public function exec($sql){
+        mysqli_query($this->mysql,$sql);
+    }
+    public function esc($string){
+        return mysqli_real_escape_string($this->mysql,$string);
+    }
+}
+$mysql=new Db();
